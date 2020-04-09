@@ -3,7 +3,7 @@ const nunjucks = require('nunjucks');
 
 const server = express();
 
-const data = require('./data');
+const data = require('./public/data');
 
 server.set("view engine", "njk");
 server.use(express.static('public'));
@@ -16,6 +16,10 @@ nunjucks.configure("views", {
 
 server.get('/', (req, res) => {
     res.render("index", { items: data });
-})
+});
+
+server.get('/receitas', (req, res) => {
+    res.render("receitas", { items: data });
+});
 
 server.listen(3333);

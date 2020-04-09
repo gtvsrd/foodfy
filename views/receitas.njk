@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Foodfy: Receitas</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="card-container">
+        {% for item in items %}
+        <div class="card" id="{{ item.id }}">
+            <img src="{{ item.picture }}" alt="{{ item.title }}">
+            <h4>{{ item.title }}</h4>
+            <p>por {{ item.author }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="card-container">
+        {% for item in items %}
+        <div class="card" id="{{ item.id }}">
+            <img src="{{ item.picture }}" alt="{{ item.title }}">
+            <h4>{{ item.title }}</h4>
+            <p>por {{ item.author }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <img src="" alt="">
+                <h4></h4>
+                <p></p>
+                <a class="close-modal">Fechar modal</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}
