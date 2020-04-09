@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+ 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 122px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #111111;
+}
+
+h2 {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 40px;
+    background: #EEEEEE;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px;
+}
+
+.page-logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: left;
+    gap: 30px;
+}
+
+.pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    gap: 30px;
+}
+
+.info {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    align-content: center;
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    gap: 200px;
+}
+
+.info-content img {
+
+    margin-top: 66px;
+
+}
+
+.info-text {
+    margin-left: 60px;
+    margin-top: 117px;
+    color: #111111;
+}
+
+.info-text p {
+    opacity: 0.7;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+}
+
+.card-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 940px;
+}
+
+.card img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    max-height: 140px;
+}
+
+.card h4 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #111111;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777777;
+}
