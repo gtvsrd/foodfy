@@ -123,6 +123,24 @@ footer p {
     color: #777777;
 }
 
+.about {
+    max-width: 940px;
+    margin: 0 auto; 
+}
+
+.about h2 {
+    color: #111111;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
 /* --- MODAL --- */
 
 .modal-overlay {
@@ -141,7 +159,7 @@ footer p {
     width: 50%;
     height: 50%;
     min-width: 600px;
-    min-height: 420px;
+    min-height: 450px;
     margin: 5vh auto;
     position: relative;
 }

@@ -1,6 +1,5 @@
 const modalOverlay = document.querySelector('.modal-overlay');
 const modalContent = document.querySelector('.modal-content');
-const modal = document.querySelector('.modal');
 const cards = document.querySelectorAll('.card');
 
 for (let content of cards) {
@@ -20,4 +19,4 @@ for (let content of cards) {
 document.querySelector(".close-modal").addEventListener("click", function(){
     modalOverlay.classList.remove("active");
     modalContent.querySelector("img").src = "";
-})
+});

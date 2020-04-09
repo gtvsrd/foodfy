@@ -22,4 +22,8 @@ server.get('/receitas', (req, res) => {
     res.render("receitas", { items: data });
 });
 
+server.get('/sobre', (req, res) => {
+    res.render("sobre");
+});
+
 server.listen(3333);
