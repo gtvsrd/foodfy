@@ -1,0 +1,92 @@
+        <div class="item">
+            <div>Nome do prato</div>
+            <div>
+                <input 
+                    type="text"
+                    name="title"
+                    value="{{ recipe.title }}"
+                >
+            </div>
+        </div>
+        
+        <div class="item">
+            <div>Imagem da receita</div>
+            <div>
+                <input 
+                    type="url"
+                    name="picture"
+                    placeholder="http://"
+                    value="{{ recipe.picture }}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="ingredients">
+                <div>Ingredientes</div>
+                {% if recipe.id != null %}
+                    {% for ingredient in recipe.ingredients %}
+                        <div class="ingredient">
+                            <input 
+                                type="text"
+                                name="ingredients[]"
+                                placeholder="Adicione um ingrediente"
+                                value="{{ ingredient }}"
+                            >
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if recipe.id == null %}
+                    <div class="ingredient">
+                        <input 
+                            type="text"
+                            name="ingredients[]"
+                            placeholder="Adicione um ingrediente"
+                            value="{{ ingredient }}"
+                        >
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+
+        <div class="item">
+            <div id="methods">
+                <div>Modo de preparo</div>
+
+                {% if recipe.id != null %}
+                    {% for method in recipe.methods %}
+                        <div class="method">
+                            <input 
+                                type="text"
+                                name="methods[]"
+                                placeholder="Adicione um passo"
+                                value="{{ method }}"
+                            >
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if recipe.id == null %}
+                    <div class="method">
+                        <input 
+                            type="text"
+                            name="methods[]"
+                            placeholder="Adicione um passo"
+                            value="{{ method }}"
+                        >
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <button type="button" class="add-method">Adicionar novo passo</button>
+
+        <div class="item">
+            <div>Informações adicionais</div>
+            <div>
+                <textarea name="info" rows=10>{{ recipe.info }}</textarea>
+            </div>
+        </div>
+
+        

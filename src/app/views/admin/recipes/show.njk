@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Foodfy: Receitas</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+<header class="adminHeader">
+{% endblock %}
+
+{% block logo %}
+<a href="/"><img src="/assets/logoAdmin.png" alt="Logo da Foodfy"></a>
+{% endblock %}
+
+{% block pages %}
+    <div class="admin pages">
+        <a href="create">Criar</a>
+            
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="details">
+        <div class="preform">
+            <h3>Receita: {{item.title}}</h3>
+            <a class="button" href="/admin/recipes/{{item.id}}/edit">Editar receita</a>
+        </div>
+    </div>
+    
+    <div class="show">
+        <img src="{{item.picture}}/940x280" alt="{{item.id}}">
+        <h1>{{item.title}}</h1>
+        <p>{{item.author}}</p>
+
+        <div class="body">
+            <h3>Ingredientes</h3>
+            {% for ingredient in item.ingredients %}
+                <p>-&nbsp{{ingredient}};</p>
+            {% endfor %}
+            <h3>Modo de Preparo</h3>
+            {% for method in item.methods %}
+                <p>-&nbsp{{method}};</p>
+            {% endfor %}
+            <h3>Informações adicionais</h3>
+            <p>{{item.info}}</p>
+        </div>
+    </div>
+{% endblock %}

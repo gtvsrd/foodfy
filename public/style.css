@@ -6,21 +6,20 @@
     margin: 0;
     border: 0;
 }
- 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 122px;
-    max-width: 940px;
+
+.header {
+    width: 940px;
     margin: 0 auto;
     padding-top: 36px;
     padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
 }
 
 header a {
     text-decoration: none;
     font-size: 16px;
-    color: #111111;
 }
 
 h2 {
@@ -41,17 +40,21 @@ footer p {
 }
 
 .page-logo {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: left;
-    gap: 30px;
+    align-self: left;
 }
 
 .pages {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-self: center;
+    justify-self: center;
+}
+
+.pages a {
+    color: #111111;
+    align-self: center;
+    justify-self: center;
 }
 
 .info {
@@ -179,11 +182,13 @@ footer p {
     margin: 5vh auto;
 }
 
+.show,
 .modal-content h4 {
     font-weight: 400;
     font-size: 24px;
 }
 
+.show,
 .modal-content p {
     font-size: 18px;
     color: #777777;
@@ -211,4 +216,199 @@ footer p {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+}
+
+/* ADMIN */
+
+.adminHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: auto;
+    background-color: #111;
+    
+    max-height: 80px;
+
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px 0;
+    
+}
+
+.admin .page-logo {
+    margin: 0 auto;
+}
+
+.admin.pages a {
+    display: inline-block;
+    margin: 0 auto;
+    color: white;
+}
+
+.admin.title h4 {
+    margin: 50px auto 30px;
+    max-width: 940px;
+}
+
+.admin.card-container {
+    gap: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 940px;
+}
+
+.admin .card {
+    display: grid;
+    grid-template-columns: 172px 1fr;
+    gap: 20px;
+    cursor: auto;
+}
+
+.admin .card img {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 15px;
+    max-width: 172px;
+    max-height: 80px;
+}
+
+.admin .card h4 {
+    font-size: 18px;
+
+}
+
+.card .link {
+
+}
+
+.show {
+    max-width: 940px;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.show .body {
+    align-content: left;
+    text-align: left;
+}
+
+.show .body h3 {
+    color: #111;
+    margin: 18px 0 18px;
+}
+
+.show .body p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.show.title h3 {
+    text-align: left;
+    margin: 55px auto 12px;
+    max-width: 940px;
+}
+
+.show img {
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+    margin: 12px auto 30px;
+}
+
+.show h1 {
+    color: #111;
+}
+
+/*=== FORM ===*/
+
+input, select, textarea {
+    background-color: white;
+    width: 920px;
+    outline: none;
+    color: #555;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    font-weight: normal;
+    font-size: 16px;
+    resize: none;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+}
+
+.button,
+button[type="submit"] {
+    box-sizing: border-box;
+    padding: 9px 20px;
+    background-color: #6558C3;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: lightcoral;
+}
+
+/*=== FIELDS ===*/
+
+.details {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: white;
+}
+
+.item {
+    padding: 16px 0;
+    background-color: white;
+}
+
+.details h3,
+.item div:first-child {
+    color: #111;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+}
+
+.item div:nth-child(2),
+.item .method,
+.item .ingredient {
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    color: #111;
+    font-size: 12px;
+}
+
+.details h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details .preform {
+    display: grid;
+    grid-template-columns: 1fr 139px;
+    align-items: center;
+}
+
+.details .preform.delete {
+    grid-template-columns: 1fr 92px 139px;
+    gap: 10px;
 }

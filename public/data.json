@@ -1,0 +1,51 @@
+{
+    "recipes": [
+        {
+            "id": "3",
+            "title": "Pão de alho",
+            "picture": "https://source.unsplash.com/collection/345760",
+            "ingredients": [
+                "1 xícara de chá de farinha de trigo",
+                "3 pitadas de sal",
+                "1 colher de sopa de óleo diesel",
+                "1 copo de água com gás"
+            ],
+            "methods": [
+                "Colocar todos os ingredientes numa panela",
+                "Mexer bem",
+                "Adicionar a pimenta",
+                "Pôr no forno pré-aquecido por 30 minutos"
+            ],
+            "info": "Essa receita se originou na Suécia, onde o queijo começou a ser produzido por casas de familias patriarcais."
+        },
+        {
+            "id": "2",
+            "title": "Pão de mel",
+            "picture": "https://source.unsplash.com/photos/jUhy6PVriQw",
+            "ingredients": [
+                "3 xícaras (chá) de farinha de trigo",
+                "1 xícara (chá) de mel",
+                "1 xícara (chá) de açúcar",
+                "1 xícara (chá) de leite",
+                "2 colheres (sopa) de manteiga em temperatura ambiente",
+                "2 ovos",
+                "1 colher (sopa) de bicarbontato de sódio",
+                "1 colher (chá) de noz moscada",
+                "1 colher (chá) de cravo em pó",
+                "1 colher (sopa) de canela em pó",
+                "Manteiga e farinha de rosca, o quanto baste para untar",
+                "200 g / 1 tablete de chocolate meio amargo, picado",
+                "2 colheres (sopa) de manteiga"
+            ],
+            "methods": [
+                "Unte uma forma redonda ou retangular com a manteiga e a farinha de rosca.",
+                "Ligue o forno em temperatura média (180 graus).",
+                "Na tigela grande da batedeira, coloque o açúcar, o mel, a manteiga e os ovos inteiros (sem a casca).",
+                "Bata muito bem.",
+                "Acrescente alternadamente o leite e a farinha de trigo, sem parar de bater.",
+                "Coloque primeiro uma xícara de farinha, em seguida ½ xícara de leite e assim por diante."
+            ],
+            "info": ""
+        }
+    ]
+}

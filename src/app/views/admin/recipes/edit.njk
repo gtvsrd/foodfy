@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Foodfy: Receitas</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+<div class="adminHeader">
+{% endblock %}
+
+{% block logo %}
+<a href="/"><img src="/assets/logoAdmin.png" alt="Logo da Foodfy"></a>
+{% endblock %}
+
+{% block pages %}
+    <div class="admin pages">
+        <a href="../create">Criar</a>
+            
+    </div>
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/admin/recipes?_method=PUT">
+
+    <section class="details">
+
+        <div class="preform delete">
+            <h3>Editando receita</h3>
+            <button type="submit" form="form-delete">Deletar</button>
+            <button type="submit">Salvar receita</button>
+        </div>
+        
+
+        {% include 'admin/recipes/fields.njk' %}
+        <input type="hidden" name="id" value="{{recipe.id}}">
+    </section>
+</form>
+
+<form id="form-delete" method="POST" action="/admin/recipes?_method=DELETE">
+    <input type="hidden" name="id" value="{{recipe.id}}">
+    
+</form>
+
+<script src="/scripts.js"></script>
+<script src="/add.js"></script>
+{% endblock %}
